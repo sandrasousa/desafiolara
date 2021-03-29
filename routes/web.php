@@ -18,5 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//rota para os produtos
+//rota geral para os produtos, devolve dependendo da classe (index, create, edit, show)
+    //GET obter produtos "/products"
+    //POST adicionar produtos "/products/create"
+    //PUT editar/atualziar produtos "/products/$id/edit"
+    //GET obter produtos por id "/products/$id"
 Route::resource('products', ProductController::class);

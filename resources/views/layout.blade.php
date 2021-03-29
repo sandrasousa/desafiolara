@@ -1,3 +1,4 @@
+<!-- define o estilo geral do website -->
 <html>
 
 <head>

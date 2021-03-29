@@ -14,6 +14,7 @@
             </div>
         </div>
     </div>
+    <!-- -->
 
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
@@ -30,6 +31,7 @@
             <th>Data da Criação</th>
             <th>Ações</th>
         </tr>
+        <!-- devolve em cada linha cada produto -->
         @foreach ($products as $product)
             <tr>
                 <td>{{ ++$i }}</td>
@@ -44,11 +46,13 @@
                         <a href="{{ route('products.show', $product->id) }}" title="show">
                             <i class="fas fa-eye text-success  fa-lg"></i>
                         </a>
+                        <!-- -->
 
                         <!-- para editar -->
                         <a href="{{ route('products.edit', $product->id) }}" title="edit">
                             <i class="fas fa-edit  fa-lg"></i>
                         </a>
+                        <!-- -->
 
                         <!-- para eliminar um produto -->
                         @csrf
@@ -57,6 +61,7 @@
                         <button type="submit" title="delete" style="border: none; background-color:transparent;">
                             <i class="fas fa-trash fa-lg text-danger"></i>
                         </button>
+                        <!-- -->
                     </form>
                 </td>
             </tr>

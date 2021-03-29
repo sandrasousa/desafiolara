@@ -13,6 +13,7 @@
         </div>
     </div>
 
+    <!-- apresenta um erro se assim se suceder -->
     @if ($errors->any())
         <div class="alert alert-danger">
             <strong>Error!</strong> 
@@ -23,7 +24,9 @@
             </ul>
         </div>
     @endif
+    <!-- -->
 
+    <!-- utiliza-se o products.store para armazenar na base de dados de acordo com o controller criado -->
     <form action="{{ route('products.store') }}" method="POST" >
         @csrf
 

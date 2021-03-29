@@ -14,6 +14,7 @@
         </div>
     </div>
 
+    <!-- apresenta um erro se assim se suceder -->
     @if ($errors->any())
         <div class="alert alert-danger">
             <strong>Error!</strong>
@@ -24,7 +25,9 @@
             </ul>
         </div>
     @endif
+    <!-- -->
 
+    <!-- vai buscar o produto por id -->
     <form action="{{ route('products.update', $product->id) }}" method="POST">
         @csrf
         @method('PUT')
