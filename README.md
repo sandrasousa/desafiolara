@@ -1,5 +1,5 @@
 <p>Comece por correr na linha de comandos para definir a base de dados o seguinte comando: <b>mysql -u root -p</b><p/>
-<p>Após correr a linha de comando anterior, corra esta: </b>create database db;</b><p>
+<p>Após correr a linha de comando anterior, corra esta: <b>create database db;</b><p>
 <p>Corra a seguinte linha, na linha de comandos: <b>php artisan migrate</b></p>
 <p>Por fim corra na linha de comandos: <b>php artisan serve</b></p>
 
