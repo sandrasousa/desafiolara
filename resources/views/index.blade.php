@@ -29,16 +29,16 @@
             <th>Descrição</th>
             <th>Preço</th>
             <th>Data da Criação</th>
-            <th>Ações</th>
+            <th></th>
         </tr>
         <!-- devolve em cada linha cada produto -->
         @foreach ($products as $product)
             <tr>
                 <td>{{ ++$i }}</td>
                 <td>{{ $product->name }}</td>
-                <td>{{ $product->name }}</td>
-                <td>{{ $product->name }}</td>
-                <td> {{ $product->name }} </td>
+                <td>{{ $product->description }}</td>
+                <td>{{ $product->price }}</td>
+                <td> {{ $product->created_at }} </td>
                 <td>
                     <form action="{{ route('products.destroy', $product->id) }}" method="POST">
 
